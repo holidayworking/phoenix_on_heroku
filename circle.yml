@@ -12,3 +12,9 @@ test:
     - script/ci/test.sh
     - mkdir -p $CIRCLE_TEST_REPORTS/exunit
     - cp _build/test/test-junit-report.xml $CIRCLE_TEST_REPORTS/exunit
+
+deployment:
+  staging:
+    branch: master
+    heroku:
+      appname: phoenix-on-heroku
