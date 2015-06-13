@@ -10,8 +10,5 @@ dependencies:
 test:
   override:
     - script/ci/test.sh
-
-test:
-  post:
     - mkdir -p $CIRCLE_TEST_REPORTS/exunit
     - cp _build/test/test-junit-report.xml $CIRCLE_TEST_REPORTS/exunit
