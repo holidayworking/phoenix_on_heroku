@@ -34,6 +34,7 @@ defmodule PhoenixOnHeroku.Mixfile do
      {:postgrex, ">= 0.0.0"},
      {:phoenix_html, "~> 1.0"},
      {:phoenix_live_reload, "~> 0.4", only: :dev},
-     {:cowboy, "~> 1.0"}]
+     {:cowboy, "~> 1.0"},
+     {:junit_formatter, "~> 0.0.2", only: :test}]
   end
 end

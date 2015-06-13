@@ -1,4 +1,5 @@
 ExUnit.start
+ExUnit.configure formatters: [ExUnit.CLIFormatter, JUnitFormatter]
 
 # Create the database, run migrations, and start the test transaction.
 Mix.Task.run "ecto.create", ["--quiet"]
